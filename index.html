@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#182934">
+  <meta name="description" content="《真理未决》哲学家阵营棋牌对战游戏：玩法规则、25位哲学家角色、基础牌、锦囊牌、装备牌、议题牌与游士契约。">
+  <title>真理未决 · 思想议会</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#page-1" data-page-link="1" aria-label="真理未决首页">
+      <span class="brand-mark">∴</span>
+      <span class="brand-name">真理未决<small>THESIS / COUNTERTHESIS</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#page-1" data-page-link="1">玩法</a>
+      <a href="#page-2" data-page-link="2">基础规则</a>
+      <a href="#page-3" data-page-link="3">卡牌图鉴</a>
+      <a href="./play/">游玩页面</a>
+    </nav>
+    <a class="header-cta" href="#page-3" data-page-link="3">翻阅卡牌 <span>↘</span></a>
+  </header>
+
+  <main id="top">
+    <section class="book-page active" data-page="1" id="page-1" aria-label="玩法介绍">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> 4—8 位思想者 · 隐藏阵营 · 公共议题</div>
+        <h1>每一场辩论，<br><em>都在改写结局。</em></h1>
+        <p class="hero-lede">哲学家在夜里结盟，白天争夺一座城邦的思想方向。先读懂立场，再决定哪些命题值得通过。</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#page-2" data-page-link="2">开始读规则 <span>↓</span></a>
+          <a class="text-link" href="#page-3" data-page-link="3">认识 25 位哲学家 <span>↗</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>25</strong><span>哲学家角色</span></div>
+          <div><strong>141</strong><span>张主牌库</span></div>
+          <div><strong>4—8</strong><span>位玩家</span></div>
+          <div><strong>3 / 5</strong><span>轮议题</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="思想议会主题视觉">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="hero-sun"></div>
+        <div class="hero-slab slab-back"></div>
+        <div class="hero-slab slab-front"></div>
+        <div class="hero-glyph glyph-a">λόγος</div>
+        <div class="hero-glyph glyph-b">道</div>
+        <div class="hero-glyph glyph-c">? / !</div>
+        <div class="hero-caption"><span>01 / THE ASSEMBLY</span><span>TRUTH IS A PUBLIC QUESTION</span></div>
+      </div>
+      <div class="hero-index">01—25 <span>FIGURES OF THOUGHT</span></div>
+    </section>
+
+    <section class="art-note" id="art-note">
+      <span class="note-icon">✦</span>
+      <p><b>卡牌版式已统一；原画尚未生成</b><span>当前环境没有内置图像生成器，已批准的 CLI 备用路径也缺少本机 API Key；此版先展示卡框与符号草案，人物和物件插画仍待生成。</span></p>
+      <span class="note-status">ARTWORK · PENDING</span>
+    </section>
+
+    <section class="intro-strip">
+      <div class="strip-label">THE PREMISE</div>
+      <p>一局围绕公共命题展开：夜间暗中行动，白天组合出牌、争取立场，最后秘密表决。每张角色牌都有独特能力，真实阵营则要靠观察与推理找出。</p>
+      <a href="#page-2" data-page-link="2">查看基础规则 <span>→</span></a>
+    </section>
+
+    <section class="section quick-play-section">
+      <div class="section-heading">
+        <div><span class="section-kicker">HOW TO PLAY</span><h2>一局游戏，三个阶段</h2></div>
+        <p class="section-aside">组合出牌，不设“每回合只能打一张”的总上限。</p>
+      </div>
+      <div class="quick-play-grid">
+        <article><span>01 · 暗中行动</span><h3>翻开议题，再进行夜议</h3><p>每轮先公开议题牌及其效果，再由不参战主持人引导怀疑派暗中选目标。</p></article>
+        <article><span>02 · 公开交锋</span><h3>围绕命题连打牌</h3><p>轮到你时，可连续使用不同牌名的牌；论证、诘问与辩论各有次数上限。</p></article>
+        <article><span>03 · 秘密表决</span><h3>用结果推进阵营目标</h3><p>选择赞成、反对或悬置。命题结果推进不同阵营的胜利进度。</p></article>
+      </div>
+      <a class="next-page-link" href="#page-2" data-page-link="2">继续：基础规则 <span>→</span></a>
+    </section>
+    </section>
+
+    <section class="book-page" data-page="2" id="page-2" aria-label="基础规则" hidden>
+
+    <section class="section rules-section" id="how-to-play">
+      <div class="section-heading">
+        <div><span class="section-kicker">01 / THE RULES</span><h2>基础规则</h2></div>
+        <p class="section-aside">先记住三件事：守住心智、辨认阵营、推动议题。</p>
+      </div>
+      <div class="rules-grid">
+        <article class="rule-card rule-card-dark">
+          <span class="rule-number">A</span>
+          <span class="rule-icon">◉</span>
+          <h3>抽取身份</h3>
+          <p>每人拿一张公开的哲学家角色牌和一张秘密阵营牌。心智上限依角色为 3 或 4 点；角色技能公开，阵营秘密。游士另秘密抽取一张契约牌。</p>
+          <small>实体版需额外主持人 · 不计入玩家数</small>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">B</span>
+          <span class="rule-icon">☾</span>
+          <h3>翻题与夜议</h3>
+          <p>每轮开局先翻开一张议题牌；从翻开到本议题结算，其效果持续生效。随后全员闭眼，怀疑派睁眼相认并默选一名其他玩家；主持人确认目标后，怀疑派闭眼，再叫醒全员结算 1 点夜间伤害。</p>
+          <small>主持人只公布结果，不公开目标选择者</small>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">C</span>
+          <span class="rule-icon">⌁</span>
+          <h3>公开辩论</h3>
+          <p>议题题目和本轮效果已经公开。玩家依次进行辩论回合，可组合使用多张牌；「反例」等响应牌可在回合外使用。每人可有一件进攻装备和一件防守装备。</p>
+          <small>每种主行动牌有单独上限</small>
+        </article>
+        <article class="rule-card">
+          <span class="rule-number">D</span>
+          <span class="rule-icon">⌖</span>
+          <h3>秘密表决</h3>
+          <p>所有存活玩家同时秘密投赞成、反对或悬置。主持人私下收票并核对需要个人票的技能，只公布总数，不向其他玩家公开个人选择；通常赞成或反对超过存活人数一半即通过或否决，都未过半则悬置。论证标记计入对应票数。</p>
+          <small>实体局须由不参战主持人计票并处理改票</small>
+        </article>
+      </div>
+      <div class="action-rule">
+        <span class="action-rule-mark">多牌行动</span>
+        <div><h3>轮到你时，可以连续打出多张牌</h3><p>没有“每回合总共一张主牌”的限制。每回合最多打出 <b>2 张「论证」</b>、<b>1 张「诘问」</b>、<b>1 张「辩论」</b>；其他同名主行动牌各最多 1 张。你可以先装备一件进攻装备和一件防守装备，再继续使用行动牌。响应牌按其时机使用，不占主行动名额。</p></div>
+      </div>
+      <div class="rule-details">
+        <details open>
+          <summary>4—8 人如何配置？ <span>＋</span></summary>
+          <div class="detail-content">
+            <div class="setup-table">
+              <span>玩家数</span><span>建构派</span><span>怀疑派</span><span>游士</span><span>议题数</span>
+              <b>4 人</b><b>2</b><b>1</b><b>1</b><b>3</b>
+              <b>5 人</b><b>3</b><b>1</b><b>1</b><b>3</b>
+              <b>6 人</b><b>3</b><b>2</b><b>1</b><b>5</b>
+              <b>7 人</b><b>4</b><b>2</b><b>1</b><b>5</b>
+              <b>8 人</b><b>4</b><b>3</b><b>1</b><b>5</b>
+            </div>
+            <p>角色牌上的心智数就是你的起始心智与上限：技能强度高或带回复的角色通常为 3 心智，常规强度角色为 4 心智。配置表中的人数只计算玩家；实体版另需 1 名不参战主持人引导闭眼、夜间选目标和议题流程，也可以由自动主持的应用代替。主持人不会加入阵营或计入胜负。夜间由怀疑派彼此确认身份后共同选目标，这是阵营内部互认；其他玩家不会得知。投票时所有人同时秘密写票并交给主持人，主持人可以查看个人票以处理改票、技能和契约，但只向全桌公布总票数与议题结果，不公开个人选择。开局每人摸 4 张。牌堆抽尽时，将弃牌堆洗混作为新牌堆。</p>
+            <p><b>议题牌</b>单独洗成一叠，每轮开局翻开 1 张：题目决定本轮表决的公共命题，「本议题效果」从翻开时起生效，改变本轮的牌、资源、装备或投票规则；结算后弃置。短局用 3 张，标准局用 5 张。<b>契约牌</b>单独洗成一叠，共 10 张；只发给游士 1 张并秘密保留。其中 8 张要求存活到终局，另 2 张要求先完成契约目标、再被其他玩家击倒。死亡契约的持有者出局后停止行动，但契约仍保密并留到终局判定；达成契约的游士列为胜者，即使已出局也可胜利。若没有阵营达成胜利条件，完成契约的游士仍可单独获胜；无人达成条件则平局。</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section faction-section" id="factions">
+      <div class="section-heading">
+        <div><span class="section-kicker">02 / HIDDEN AGENDAS</span><h2>三种立场，三套胜利条件</h2></div>
+        <p class="section-aside">阵营牌秘密持有，角色牌公开。历史人物不按史实学派固定归队。</p>
+      </div>
+      <div class="faction-grid">
+        <article class="faction-card faction-construct">
+          <span class="faction-index">Ⅰ</span><span class="faction-mark">＋</span>
+          <div class="faction-label">THE BUILDERS</div><h3>建构派</h3>
+          <p>推动公共规则落地，阻止城邦陷入停滞。</p>
+          <div class="win-rule"><span>获胜条件</span><b>通过命题过半，或淘汰全部怀疑派</b></div>
+        </article>
+        <article class="faction-card faction-doubt">
+          <span class="faction-index">Ⅱ</span><span class="faction-mark">?</span>
+          <div class="faction-label">THE SKEPTICS</div><h3>怀疑派</h3>
+          <p>拆解共识，让公共议题无法形成稳定结论。</p>
+          <div class="win-rule"><span>获胜条件</span><b>否决 / 悬置过半，或怀疑派人数追平其他所有存活玩家</b></div>
+        </article>
+        <article class="faction-card faction-wanderer">
+          <span class="faction-index">Ⅲ</span><span class="faction-mark">∞</span>
+          <div class="faction-label">THE WANDERER</div><h3>游士</h3>
+          <p>抽取个人秘密契约；有些要求存活，有些要求完成目标后出局。</p>
+          <div class="win-rule"><span>获胜条件</span><b>满足契约条件即可获个人胜利，可共胜</b></div>
+        </article>
+      </div>
+    </section>
+
+    </section>
+
+    <section class="book-page" data-page="3" id="page-3" aria-label="卡牌图鉴与卡牌数量" hidden>
+    <section class="section cards-section" id="cards">
+      <div class="section-heading">
+        <div><span class="section-kicker">03 / THE DECK</span><h2>翻开整套牌库</h2></div>
+        <p class="section-aside">完整组件共 186 张：25 张角色、141 张主牌、10 张议题、10 张游士契约；共 80 种卡面。</p>
+      </div>
+      <div class="deck-summary">
+        <div class="deck-total"><strong id="deck-count">141</strong><span>张主牌库</span></div>
+        <div class="deck-ratios">
+          <div class="ratio-row"><span>基础牌</span><b id="basic-count">72</b><div class="ratio-track"><i id="basic-bar"></i></div><small>51%</small></div>
+          <div class="ratio-row"><span>锦囊牌</span><b id="trick-count">45</b><div class="ratio-track"><i id="trick-bar"></i></div><small>32%</small></div>
+          <div class="ratio-row"><span>装备牌</span><b id="equipment-count">24</b><div class="ratio-track"><i id="equipment-bar"></i></div><small>17%</small></div>
+        </div>
+        <div class="deck-note"><span class="note-line"></span><p>卡面注明同名牌的实体张数。每回合允许组合出牌，再用单牌名上限、回复牌数量和强锦囊的低复制数控制节奏。</p></div>
+      </div>
+      <div class="special-decks" aria-label="议题牌与游士契约牌说明">
+        <article class="special-deck agenda-deck"><span class="special-deck-icon">⌖</span><div><span class="special-deck-label">10 张 · 每轮公开 1 张</span><h3>议题牌：题目决定讨论什么，效果决定本轮怎么玩</h3><p>每张议题牌都同时写明公共问题和一条本轮规则效果。题目让全桌围绕同一件事投票；效果会改变资源、技能、装备或投票门槛。议题结算后弃置，不混入主牌库。</p></div></article>
+        <article class="special-deck contract-deck"><span class="special-deck-icon">∞</span><div><span class="special-deck-label">10 张 · 只发给游士 1 张</span><h3>游士契约：一个只属于你的秘密胜利目标</h3><p>开局游士秘密抽 1 张契约，其他玩家不知道具体目标。8 张契约要求存活，2 张要求完成目标后出局；死亡契约不让你复活或继续行动，但达成契约的已出局游士也计为胜者。若没有阵营达成条件，完成契约的游士可以单独获胜。</p></div></article>
+      </div>
+      <div class="card-controls">
+        <div class="filter-tabs" role="tablist" aria-label="筛选牌类">
+          <button class="filter-button active" data-filter="全部">全部</button>
+          <button class="filter-button" data-filter="角色牌">角色 <span>25</span></button>
+          <button class="filter-button" data-filter="基础牌">基础 <span>72</span></button>
+          <button class="filter-button" data-filter="锦囊牌">锦囊 <span>45</span></button>
+          <button class="filter-button" data-filter="议题牌">议题 <span>10</span></button>
+          <button class="filter-button" data-filter="契约牌">游士契约 <span>10</span></button>
+          <button class="filter-button" data-filter="进攻装备">进攻装备 <span>12</span></button>
+          <button class="filter-button" data-filter="防守装备">防守装备 <span>12</span></button>
+        </div>
+        <label class="search-box"><span>⌕</span><input type="search" id="card-search" placeholder="搜索哲学家、牌名或效果…" autocomplete="off"></label>
+      </div>
+      <div class="result-line"><span id="result-count">显示 80 / 80 种卡面</span><span>点开卡片可查看完整说明、复制张数与资料出处</span></div>
+      <div class="card-grid" id="card-grid"></div>
+    </section>
+
+    <details class="deck-fold">
+      <summary>配牌思路与试玩平衡说明 <span>＋</span></summary>
+      <section class="section balance-section" id="balance">
+      <div class="section-heading">
+        <div><span class="section-kicker">04 / DECK BALANCE</span><h2>为什么这样配牌？</h2></div>
+        <p class="section-aside">这套比例是首轮试玩基线；组合出牌由单牌名上限和关键牌复制数控制。</p>
+      </div>
+      <div class="balance-grid">
+        <article><span class="balance-number">01</span><h3>72 张基础牌</h3><p>论证 12、诘问与反例各 10，核心攻防容易摸到；研读和调息各 8，限制牌流和回复。新增三种功能牌各 4 张，提供选择但不淹没核心牌。</p></article>
+        <article><span class="balance-number">02</span><h3>45 张锦囊牌</h3><p>辩论 8 张；拆解、改局、反制等强效果每种 3–4 张。多牌回合也受“每种牌名一次”约束，降低连锁爆发。</p></article>
+        <article><span class="balance-number">03</span><h3>24 张装备牌</h3><p>12 款各 2 张，进攻与防守各 12 张。每人一攻一守、同名装备不叠放，保证攻防选择同时限制场面收益。</p></article>
+        <article><span class="balance-number">04</span><h3>141 张主牌库</h3><p>72 张基础、45 张锦囊、24 张装备。4–5 人每轮摸 1 张、玩 3 个议题；6–8 人每轮摸 2 张、玩 5 个议题，兼顾小局与多人局牌流。</p></article>
+      </div>
+      <div class="balance-callout"><span>测试观察点</span><p>首轮试玩重点记录：怀疑派夜间伤害是否过强、「辩论」是否过早压低投票参与、游士契约是否太难完成。该牌数是可测试版本，不宣称未经实测的最终平衡。</p></div>
+      </section>
+    </details>
+
+    <details class="deck-fold source-fold">
+      <summary>史料出处与设计边界 <span>＋</span></summary>
+      <section class="section sources-section" id="sources">
+      <div class="sources-header">
+        <div><span class="section-kicker">05 / SOURCES & NOTES</span><h2>史料依据与设计边界</h2></div>
+        <span class="source-stamp">WIKI-BASED · GAME ADAPTATION</span>
+      </div>
+      <div class="sources-copy">
+        <p>人物介绍与技能灵感依据每张角色卡链接的 Wikipedia 条目摘要整理。人物能力是桌游化创作，不代表真实历史人物拥有超自然力量，也不把哲学家按历史阵营固定分队。</p>
+        <p>宗教与历史器物以机制象征呈现。正式印制前建议复核器物名称、历史背景、文化语境与视觉表现。</p>
+      </div>
+      <div class="source-clusters">
+        <a href="https://en.wikipedia.org/wiki/Philosophy" target="_blank" rel="noreferrer">哲学总览 ↗</a>
+        <a href="https://en.wikipedia.org/wiki/Chinese_philosophy" target="_blank" rel="noreferrer">中国哲学 ↗</a>
+        <a href="https://en.wikipedia.org/wiki/Ancient_Greek_philosophy" target="_blank" rel="noreferrer">古希腊哲学 ↗</a>
+        <a href="https://en.wikipedia.org/wiki/Islamic_philosophy" target="_blank" rel="noreferrer">伊斯兰哲学 ↗</a>
+        <a href="https://en.wikipedia.org/wiki/Modern_philosophy" target="_blank" rel="noreferrer">近现代哲学 ↗</a>
+      </div>
+      </section>
+    </details>
+    </section>
+    <nav class="page-turner" aria-label="页面翻页">
+      <button type="button" class="page-arrow" id="previous-page" data-turn="-1">← 上一页</button>
+      <div class="page-dots">
+        <a href="#page-1" data-page-link="1"><span>01</span>玩法</a>
+        <a href="#page-2" data-page-link="2"><span>02</span>基础规则</a>
+        <a href="#page-3" data-page-link="3"><span>03</span>卡牌图鉴</a>
+      </div>
+      <button type="button" class="page-arrow" id="next-page" data-turn="1">下一页 →</button>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#top"><span class="brand-mark">∴</span><span class="brand-name">真理未决<small>THESIS / COUNTERTHESIS</small></span></a>
+    <span>一套仍在辩论中的原型规则 · v0.2</span>
+    <a href="#top">回到开篇 ↑</a>
+  </footer>
+
+  <dialog id="detail-dialog" class="detail-dialog">
+    <button type="button" id="close-dialog" class="close-dialog" aria-label="关闭">×</button>
+    <div class="dialog-art"><span>原画待生成</span><i>∴</i></div>
+    <div class="dialog-kicker" id="dialog-kicker"></div>
+    <h2 id="dialog-title"></h2>
+    <p class="dialog-meta" id="dialog-meta"></p>
+    <div id="dialog-body"></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
