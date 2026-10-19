@@ -19,9 +19,9 @@
 </p>
 
 <p align="center">
-  <a href="https://matchayuki.github.io/ZhenliWeijue/"><b>📖 玩法介绍页</b></a>
+  <a href="https://matchayuki.github.io/Truth-Unsettled/"><b>📖 玩法介绍页</b></a>
   &nbsp;·&nbsp;
-  <a href="https://matchayuki.github.io/ZhenliWeijue/play/"><b>🎲 游玩桌页面</b></a>
+  <a href="https://matchayuki.github.io/Truth-Unsettled/play/"><b>🎲 游玩桌页面</b></a>
 </p>
 
 ---
@@ -144,7 +144,7 @@
 
 技能都从思想本身长出来，而不是贴标签：柏拉图的「洞穴寓言」允许在计票后、公布前秘密改票；庄子的「齐物」能把论证标记在两个立场间挪动；休谟的「因果怀疑」取消刚发生的一项非伤害效果；阿伦特的「公共领域」每局一次强制重投。
 
-**完整卡面、技能原文与史料出处**：见[玩法介绍页 · 卡牌图鉴](https://matchayuki.github.io/ZhenliWeijue/#page-3)，支持按牌类筛选和关键词搜索。
+**完整卡面、技能原文与史料出处**：见[玩法介绍页 · 卡牌图鉴](https://matchayuki.github.io/Truth-Unsettled/#page-3)，支持按牌类筛选和关键词搜索。
 
 ---
 
@@ -152,8 +152,8 @@
 
 ### A. 线上浏览（静态托管，随时可看）
 
-- 玩法介绍 → <https://matchayuki.github.io/ZhenliWeijue/>
-- 游玩桌 → <https://matchayuki.github.io/ZhenliWeijue/play/>
+- 玩法介绍 → <https://matchayuki.github.io/Truth-Unsettled/>
+- 游玩桌 → <https://matchayuki.github.io/Truth-Unsettled/play/>
 
 ⚠️ **GitHub Pages 只托管静态文件，不运行 `play/server.js`。** 游玩桌页面可以打开、可以看清全部卡面与流程，但「创建房间 / 加入房间」是禁用状态——那两个按钮需要真实的牌局服务。
 
