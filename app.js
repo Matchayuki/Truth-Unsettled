@@ -143,7 +143,7 @@ function cardHTML(c, index) {
     '<div class="playing-card ' + (identity ? "character-card" : "type-" + c.category) + '" style="--card-accent:' + (c.hue || (c.category === "装备牌" ? c.kind === "进攻" ? "#bd7657" : "#729a89" : c.category === "锦囊牌" ? "#9b83c1" : c.category === "议题牌" ? "#43847d" : c.category === "契约牌" ? "#a277b8" : "#ca9e59")) + '">' +
       '<div class="card-topline"><span>' + c.tag + '</span><span>' + countText + '</span></div>' +
       '<div class="card-art">' + (identity ? '<img loading="lazy" src="' + artPath + '" alt="' + c.name + '牌面插画" onerror="this.remove()">' : '<img loading="lazy" src="' + artPath + '" alt="' + c.name + '牌面插画" onerror="this.remove()">') +
-        '<div class="art-pending"><span class="pending-symbol">' + (c.icon || "✦") + '</span><small>原画待生成</small></div>' +
+        '<div class="art-pending"><span class="pending-symbol">' + (c.icon || "✦") + '</span></div>' +
         (identity ? '<span class="portrait-name">' + c.name + '</span>' : '') +
       '</div>' +
       '<div class="card-copy"><div class="card-name">' + c.name + '</div>' +
@@ -175,7 +175,7 @@ function showDetails(c) {
   const imagePath = isCharacter ? "assets/portraits/" + c.id + ".png" : "assets/card-art/" + c.id + ".png";
   const art = document.querySelector(".dialog-art");
   art.classList.add("has-art");
-  art.innerHTML = '<img src="' + imagePath + '" alt="' + c.name + '牌面插画"><span>原画待生成</span><i>∴</i>';
+  art.innerHTML = '<img src="' + imagePath + '" alt="' + c.name + '牌面插画"><i>∴</i>';
   const artImage = art.querySelector("img");
   artImage.addEventListener("error", () => { artImage.remove(); art.classList.remove("has-art"); }, {once:true});
   const pileName = c.category === "议题牌" ? "议题堆" : c.category === "契约牌" ? "契约堆" : "牌库";
