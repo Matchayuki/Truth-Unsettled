@@ -239,3 +239,16 @@ node play/server.js          # 默认 http://localhost:4317
   <sub>原型规则 v0.2 · 一套仍在辩论中的设计<br>
   规则、卡面与数值都可能被推翻 —— 这大概很符合它的名字。</sub>
 </p>
+
+---
+
+## 小游戏版（0.9.4）
+
+微信小游戏版代码位于 [`minigame/`](minigame/)，包含：
+
+- 服务端权威规则引擎与隐藏信息视图
+- 腾讯云 CloudBase PostgreSQL 房间服务
+- 4—8 人联机、单人演练（1 真人 + 3 AI）、好友局 AI 补位
+- 0.9.2 起的新胜负：按通过/非通过的结果分布判定
+
+运行与测试说明见 [`minigame/README.md`](minigame/README.md)。
