@@ -64,13 +64,14 @@
 
     <section class="section quick-play-section">
       <div class="section-heading">
-        <div><span class="section-kicker">HOW TO PLAY</span><h2>一局游戏，三个阶段</h2></div>
+        <div><span class="section-kicker">HOW TO PLAY</span><h2>一局游戏，每轮四个阶段</h2></div>
         <p class="section-aside">组合出牌，不设“每回合只能打一张”的总上限。</p>
       </div>
       <div class="quick-play-grid">
         <article><span>01 · 暗中行动</span><h3>翻开议题，再进行夜议</h3><p>每轮先公开议题牌及其效果，再由不参战主持人引导怀疑派暗中选目标。</p></article>
         <article><span>02 · 公开交锋</span><h3>围绕命题连打牌</h3><p>轮到你时，可连续使用不同牌名的牌；论证、诘问与辩论各有次数上限。</p></article>
-        <article><span>03 · 秘密表决</span><h3>结果分布决定终局</h3><p>选择赞成、反对或悬置。每次表决的结果都会累积；全部议题结算后，按通过 / 非通过的整体分布判定阵营胜负。</p></article>
+        <article><span>03 · 秘密表决</span><h3>有效票决定终局</h3><p>选择赞成、反对或悬置。每次表决的结果都会累积；全部议题结算后，只比较「通过」与「否决」，悬置中立不计入。</p></article>
+        <article><span>04 · 陶片放逐</span><h3>每轮抽走一点心智</h3><p>表决结算后，每人秘密选一名怀疑对象、各投一枚陶片；随机抽出一枚，被抽中者失去 1 点心智。结果公开，谁投了谁不公开。</p></article>
       </div>
       <a class="next-page-link" href="#page-2" data-page-link="2">继续：基础规则 <span>→</span></a>
     </section>
@@ -109,8 +110,15 @@
           <span class="rule-number">D</span>
           <span class="rule-icon">⌖</span>
           <h3>秘密表决</h3>
-          <p>所有存活玩家同时秘密投赞成、反对或悬置。主持人私下收票并核对需要个人票的技能，只公布总数，不向其他玩家公开个人选择；通常赞成或反对超过存活人数一半即通过或否决，都未过半则悬置。论证标记计入对应票数。<b>悬置在终局按「非通过」计入。</b></p>
+          <p>所有存活玩家同时秘密投赞成、反对或悬置。主持人私下收票并核对需要个人票的技能，只公布总数，不向其他玩家公开个人选择；通常赞成或反对超过存活人数一半即通过或否决，都未过半则悬置。论证标记计入对应票数。<b>悬置在终局中立，不参与胜负比较。</b></p>
           <small>实体局须由不参战主持人计票并处理改票</small>
+        </article>
+        <article class="rule-card rule-card-wide">
+          <span class="rule-number">E</span>
+          <span class="rule-icon">⌇</span>
+          <h3>陶片放逐</h3>
+          <p>表决结算后进入放逐：每名存活玩家秘密选择一名<b>其他</b>存活玩家，每人各产生一枚陶片；所有陶片混合后<b>随机抽出一枚</b>，被抽中者失去 1 点心智。<b>结果公开，票向不公开</b>——只会公布谁被抽中，不会公布谁投了谁。30 秒未提交者由系统随机补一枚陶片，牌局不会卡住。这是每轮唯一的额外伤害来源，与夜间伤害叠加后，低心智角色会很快出局。</p>
+          <small>实体版：写名字交主持人，混匀后抽一枚 · 小游戏自动完成，AI 也会投票</small>
         </article>
       </div>
       <div class="action-rule">
@@ -119,7 +127,7 @@
       </div>
       <div class="action-rule">
         <span class="action-rule-mark">终局判定</span>
-        <div><h3>胜负看结果分布，不看累计进度</h3><p>所有议题结算后，按<b>通过 / 非通过（否决与悬置）</b>的整体分布判定阵营胜负；<b>悬置按非通过计入</b>。至少完成一次公开表决后才会宣布阵营胜负。分布判定取代了旧版“通过过半即建构派胜、否决或悬置过半即怀疑派胜”的累计进度写法。</p></div>
+        <div><h3>胜负看有效票：只比「通过」与「否决」</h3><p>所有议题结算后，只统计已投出的<b>通过</b>与<b>否决</b>两种有效票，<b>悬置中立、不参与比较</b>。建构派需要<b>至少 1 个议题通过，且「通过」不少于「否决」</b>；怀疑派则是<b>「否决」多于「通过」</b>，或<b>全部议题悬置</b>。若通过与否决数量相同，<b>平票归建构派</b>。举例：2 通过 / 1 悬置 → 建构派；1 通过 / 1 否决 / 1 悬置 → 建构派；1 通过 / 2 否决 → 怀疑派；0 通过 / 3 悬置 → 怀疑派。另有两条人数条件：淘汰全部怀疑派即建构派胜；存活怀疑派人数<b>严格多于</b>其他所有存活玩家之和即怀疑派胜。至少完成一次公开表决后才宣布阵营胜负。</p></div>
       </div>
       <div class="rule-details">
         <details open>
@@ -143,20 +151,20 @@
     <section class="section faction-section" id="factions">
       <div class="section-heading">
         <div><span class="section-kicker">02 / HIDDEN AGENDAS</span><h2>三种立场，三套胜利条件</h2></div>
-        <p class="section-aside">阵营牌秘密持有，角色牌公开。历史人物不按史实学派固定归队。终局按通过 / 非通过的结果分布判定，悬置计入非通过。</p>
+        <p class="section-aside">阵营牌秘密持有，角色牌公开。历史人物不按史实学派固定归队。终局只看有效票：通过与否决的比较，悬置中立。</p>
       </div>
       <div class="faction-grid">
         <article class="faction-card faction-construct">
           <span class="faction-index">Ⅰ</span><span class="faction-mark">＋</span>
           <div class="faction-label">THE BUILDERS</div><h3>建构派</h3>
           <p>推动公共规则落地，阻止城邦陷入停滞。</p>
-          <div class="win-rule"><span>获胜条件</span><b>「通过」必须过半，且与「非通过」的数量差 ≤ 1（形成均势）；或淘汰全部怀疑派</b></div>
+          <div class="win-rule"><span>获胜条件</span><b>至少 1 个议题通过，且「通过」不少于「否决」（悬置中立、平票归建构派）；或淘汰全部怀疑派</b></div>
         </article>
         <article class="faction-card faction-doubt">
           <span class="faction-index">Ⅱ</span><span class="faction-mark">?</span>
           <div class="faction-label">THE SKEPTICS</div><h3>怀疑派</h3>
           <p>拆解共识，让公共议题无法形成稳定结论。</p>
-          <div class="win-rule"><span>获胜条件</span><b>结果一边倒（全通过、全否决，或两类数量差 ≥ 2）；或存活怀疑派人数 ≥ 其他所有存活玩家之和</b></div>
+          <div class="win-rule"><span>获胜条件</span><b>「否决」多于「通过」，或全部议题悬置；或存活怀疑派人数严格多于其他所有存活玩家之和</b></div>
         </article>
         <article class="faction-card faction-wanderer">
           <span class="faction-index">Ⅲ</span><span class="faction-mark">∞</span>
@@ -165,7 +173,7 @@
           <div class="win-rule"><span>获胜条件</span><b>满足契约条件即可获个人胜利，可共胜</b></div>
         </article>
       </div>
-      <div class="faction-note"><span>判定顺序</span><p>先检查是否至少完成过一次公开表决——没有则继续推进议题，不宣布阵营胜负。随后按结果分布判定建构派 / 怀疑派；游士契约独立结算，可与任一阵营共胜，死亡契约在出局后仍可成立。若没有任何阵营或契约达成条件，本局平局。</p></div>
+      <div class="faction-note"><span>判定顺序</span><p>先检查是否至少完成过一次公开表决——没有则继续推进议题，不宣布阵营胜负。随后比较有效票：通过 ≥ 否决且至少通过 1 个议题 → 建构派；否决 &gt; 通过，或全部悬置 → 怀疑派；两条人数条件（淘汰全部怀疑派 / 存活怀疑派严格多于其余之和）优先于票数判定。游士契约独立结算，可与任一阵营共胜，死亡契约在出局后仍可成立。若没有任何阵营或契约达成条件，本局平局。</p></div>
     </section>
 
     </section>
@@ -256,7 +264,7 @@
   </main>
   <footer class="site-footer">
     <a class="brand brand-footer" href="#top"><span class="brand-mark">∴</span><span class="brand-name">真理未决-哲学桌游<small>THESIS / COUNTERTHESIS</small></span></a>
-    <span>一套仍在辩论中的原型规则 · 规则同步至 0.9.4</span>
+    <span>一套仍在辩论中的原型规则 · 规则同步至 0.9.6</span>
     <a href="#top">回到开篇 ↑</a>
   </footer>
 
