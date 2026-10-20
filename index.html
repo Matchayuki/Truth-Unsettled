@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#182934">
   <meta name="description" content="《真理未决》哲学家阵营棋牌对战游戏：玩法规则、25位哲学家角色、基础牌、锦囊牌、装备牌、议题牌与游士契约。">
-  <title>真理未决 · 思想议会</title>
+  <title>真理未决-哲学桌游 · 思想议会</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
   <header class="site-header">
     <a class="brand" href="#page-1" data-page-link="1" aria-label="真理未决首页">
       <span class="brand-mark">∴</span>
-      <span class="brand-name">真理未决<small>THESIS / COUNTERTHESIS</small></span>
+      <span class="brand-name">真理未决-哲学桌游<small>THESIS / COUNTERTHESIS</small></span>
     </a>
     <nav class="main-nav" aria-label="主导航">
       <a href="#page-1" data-page-link="1">玩法</a>
@@ -70,7 +70,7 @@
       <div class="quick-play-grid">
         <article><span>01 · 暗中行动</span><h3>翻开议题，再进行夜议</h3><p>每轮先公开议题牌及其效果，再由不参战主持人引导怀疑派暗中选目标。</p></article>
         <article><span>02 · 公开交锋</span><h3>围绕命题连打牌</h3><p>轮到你时，可连续使用不同牌名的牌；论证、诘问与辩论各有次数上限。</p></article>
-        <article><span>03 · 秘密表决</span><h3>用结果推进阵营目标</h3><p>选择赞成、反对或悬置。命题结果推进不同阵营的胜利进度。</p></article>
+        <article><span>03 · 秘密表决</span><h3>结果分布决定终局</h3><p>选择赞成、反对或悬置。每次表决的结果都会累积；全部议题结算后，按通过 / 非通过的整体分布判定阵营胜负。</p></article>
       </div>
       <a class="next-page-link" href="#page-2" data-page-link="2">继续：基础规则 <span>→</span></a>
     </section>
@@ -88,7 +88,7 @@
           <span class="rule-number">A</span>
           <span class="rule-icon">◉</span>
           <h3>抽取身份</h3>
-          <p>每人拿一张公开的哲学家角色牌和一张秘密阵营牌。心智上限依角色为 3 或 4 点；角色技能公开，阵营秘密。游士另秘密抽取一张契约牌。</p>
+          <p>每人拿一张公开的哲学家角色牌和一张秘密阵营牌。心智上限依角色为 <b>2 或 3 点</b>（0.9.2 起整体下调 1 点）；角色技能公开，阵营秘密。手牌上限 = 心智 + 1。游士另秘密抽取一张契约牌。</p>
           <small>实体版需额外主持人 · 不计入玩家数</small>
         </article>
         <article class="rule-card">
@@ -102,20 +102,24 @@
           <span class="rule-number">C</span>
           <span class="rule-icon">⌁</span>
           <h3>公开辩论</h3>
-          <p>议题题目和本轮效果已经公开。玩家依次进行辩论回合，可组合使用多张牌；「反例」等响应牌可在回合外使用。每人可有一件进攻装备和一件防守装备。</p>
-          <small>每种主行动牌有单独上限</small>
+          <p>议题题目和本轮效果已经公开。<b>行动顺序每轮随机</b>，每名存活玩家行动一次、每人 120 秒，可以连续出牌，也可以提前结束回合；当前行动者对所有玩家可见。「反例」等响应牌可在回合外使用。装备栏固定一攻一守：第一件直接进入对应栏，同栏第二件替换旧装备。</p>
+          <small>每种主行动牌有单独上限 · 手牌不超过心智 + 1</small>
         </article>
         <article class="rule-card">
           <span class="rule-number">D</span>
           <span class="rule-icon">⌖</span>
           <h3>秘密表决</h3>
-          <p>所有存活玩家同时秘密投赞成、反对或悬置。主持人私下收票并核对需要个人票的技能，只公布总数，不向其他玩家公开个人选择；通常赞成或反对超过存活人数一半即通过或否决，都未过半则悬置。论证标记计入对应票数。</p>
+          <p>所有存活玩家同时秘密投赞成、反对或悬置。主持人私下收票并核对需要个人票的技能，只公布总数，不向其他玩家公开个人选择；通常赞成或反对超过存活人数一半即通过或否决，都未过半则悬置。论证标记计入对应票数。<b>悬置在终局按「非通过」计入。</b></p>
           <small>实体局须由不参战主持人计票并处理改票</small>
         </article>
       </div>
       <div class="action-rule">
         <span class="action-rule-mark">多牌行动</span>
-        <div><h3>轮到你时，可以连续打出多张牌</h3><p>没有“每回合总共一张主牌”的限制。每回合最多打出 <b>2 张「论证」</b>、<b>1 张「诘问」</b>、<b>1 张「辩论」</b>；其他同名主行动牌各最多 1 张。你可以先装备一件进攻装备和一件防守装备，再继续使用行动牌。响应牌按其时机使用，不占主行动名额。</p></div>
+        <div><h3>轮到你时，可以连续打出多张牌</h3><p>没有“每回合总共一张主牌”的限制。每回合最多打出 <b>2 张「论证」</b>、<b>1 张「诘问」</b>、<b>1 张「辩论」</b>；其他同名主行动牌各最多 1 张。你可以先装备一件进攻装备和一件防守装备，再继续使用行动牌。<b>手牌数量上限 = 心智 + 1</b>：摸牌、收牌或心智下降后，超出部分必须立即弃掉。响应牌按其时机使用，不占主行动名额。</p></div>
+      </div>
+      <div class="action-rule">
+        <span class="action-rule-mark">终局判定</span>
+        <div><h3>胜负看结果分布，不看累计进度</h3><p>所有议题结算后，按<b>通过 / 非通过（否决与悬置）</b>的整体分布判定阵营胜负；<b>悬置按非通过计入</b>。至少完成一次公开表决后才会宣布阵营胜负。分布判定取代了旧版“通过过半即建构派胜、否决或悬置过半即怀疑派胜”的累计进度写法。</p></div>
       </div>
       <div class="rule-details">
         <details open>
@@ -129,7 +133,7 @@
               <b>7 人</b><b>4</b><b>2</b><b>1</b><b>5</b>
               <b>8 人</b><b>4</b><b>3</b><b>1</b><b>5</b>
             </div>
-            <p>角色牌上的心智数就是你的起始心智与上限：技能强度高或带回复的角色通常为 3 心智，常规强度角色为 4 心智。配置表中的人数只计算玩家；实体版另需 1 名不参战主持人引导闭眼、夜间选目标和议题流程，也可以由自动主持的应用代替。主持人不会加入阵营或计入胜负。夜间由怀疑派彼此确认身份后共同选目标，这是阵营内部互认；其他玩家不会得知。投票时所有人同时秘密写票并交给主持人，主持人可以查看个人票以处理改票、技能和契约，但只向全桌公布总票数与议题结果，不公开个人选择。开局每人摸 4 张。牌堆抽尽时，将弃牌堆洗混作为新牌堆。</p>
+            <p>角色牌上的心智数就是你的起始心智与上限：技能强度高或带回复的角色通常为 <b>2 心智</b>，常规强度角色为 <b>3 心智</b>（0.9.2 起整体下调 1 点，更容易被淘汰）。开局摸牌至上限，即<b>手牌 = 心智 + 1</b>（通常 3 或 4 张）；此后摸牌、收牌或心智下降后都要立即弃到上限。装备栏固定一攻一守：第一件直接装备，同栏第二件替换旧装备。配置表中的人数只计算玩家；实体版另需 1 名不参战主持人引导闭眼、夜间选目标和议题流程，也可以由自动主持的应用代替。主持人不会加入阵营或计入胜负。夜间由怀疑派彼此确认身份后共同选目标，这是阵营内部互认；其他玩家不会得知。投票时所有人同时秘密写票并交给主持人，主持人可以查看个人票以处理改票、技能和契约，但只向全桌公布总票数与议题结果，不公开个人选择。开局每人摸 4 张。牌堆抽尽时，将弃牌堆洗混作为新牌堆。</p>
             <p><b>议题牌</b>单独洗成一叠，每轮开局翻开 1 张：题目决定本轮表决的公共命题，「本议题效果」从翻开时起生效，改变本轮的牌、资源、装备或投票规则；结算后弃置。短局用 3 张，标准局用 5 张。<b>契约牌</b>单独洗成一叠，共 10 张；只发给游士 1 张并秘密保留。其中 8 张要求存活到终局，另 2 张要求先完成契约目标、再被其他玩家击倒。死亡契约的持有者出局后停止行动，但契约仍保密并留到终局判定；达成契约的游士列为胜者，即使已出局也可胜利。若没有阵营达成胜利条件，完成契约的游士仍可单独获胜；无人达成条件则平局。</p>
           </div>
         </details>
@@ -139,20 +143,20 @@
     <section class="section faction-section" id="factions">
       <div class="section-heading">
         <div><span class="section-kicker">02 / HIDDEN AGENDAS</span><h2>三种立场，三套胜利条件</h2></div>
-        <p class="section-aside">阵营牌秘密持有，角色牌公开。历史人物不按史实学派固定归队。</p>
+        <p class="section-aside">阵营牌秘密持有，角色牌公开。历史人物不按史实学派固定归队。终局按通过 / 非通过的结果分布判定，悬置计入非通过。</p>
       </div>
       <div class="faction-grid">
         <article class="faction-card faction-construct">
           <span class="faction-index">Ⅰ</span><span class="faction-mark">＋</span>
           <div class="faction-label">THE BUILDERS</div><h3>建构派</h3>
           <p>推动公共规则落地，阻止城邦陷入停滞。</p>
-          <div class="win-rule"><span>获胜条件</span><b>通过命题过半，或淘汰全部怀疑派</b></div>
+          <div class="win-rule"><span>获胜条件</span><b>「通过」必须过半，且与「非通过」的数量差 ≤ 1（形成均势）；或淘汰全部怀疑派</b></div>
         </article>
         <article class="faction-card faction-doubt">
           <span class="faction-index">Ⅱ</span><span class="faction-mark">?</span>
           <div class="faction-label">THE SKEPTICS</div><h3>怀疑派</h3>
           <p>拆解共识，让公共议题无法形成稳定结论。</p>
-          <div class="win-rule"><span>获胜条件</span><b>否决 / 悬置过半，或怀疑派人数追平其他所有存活玩家</b></div>
+          <div class="win-rule"><span>获胜条件</span><b>结果一边倒（全通过、全否决，或两类数量差 ≥ 2）；或存活怀疑派人数 ≥ 其他所有存活玩家之和</b></div>
         </article>
         <article class="faction-card faction-wanderer">
           <span class="faction-index">Ⅲ</span><span class="faction-mark">∞</span>
@@ -161,6 +165,7 @@
           <div class="win-rule"><span>获胜条件</span><b>满足契约条件即可获个人胜利，可共胜</b></div>
         </article>
       </div>
+      <div class="faction-note"><span>判定顺序</span><p>先检查是否至少完成过一次公开表决——没有则继续推进议题，不宣布阵营胜负。随后按结果分布判定建构派 / 怀疑派；游士契约独立结算，可与任一阵营共胜，死亡契约在出局后仍可成立。若没有任何阵营或契约达成条件，本局平局。</p></div>
     </section>
 
     </section>
@@ -250,8 +255,8 @@
     </nav>
   </main>
   <footer class="site-footer">
-    <a class="brand brand-footer" href="#top"><span class="brand-mark">∴</span><span class="brand-name">真理未决<small>THESIS / COUNTERTHESIS</small></span></a>
-    <span>一套仍在辩论中的原型规则 · v0.2</span>
+    <a class="brand brand-footer" href="#top"><span class="brand-mark">∴</span><span class="brand-name">真理未决-哲学桌游<small>THESIS / COUNTERTHESIS</small></span></a>
+    <span>一套仍在辩论中的原型规则 · 规则同步至 0.9.4</span>
     <a href="#top">回到开篇 ↑</a>
   </footer>
 
