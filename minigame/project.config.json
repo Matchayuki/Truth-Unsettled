@@ -1,0 +1,31 @@
+{
+  "compileType": "game",
+  "libVersion": "3.17.4",
+  "appid": "wx62c36cb736876216",
+  "projectname": "truth-unsettled",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true
+  },
+  "packOptions": {
+    "ignore": [
+      { "type": "folder", "value": "tools" },
+      { "type": "folder", "value": "shared" },
+      { "type": "folder", "value": "deploy" },
+      { "type": "folder", "value": "cloudfunctions" },
+      { "type": "folder", "value": "release-screenshots" },
+      { "type": "folder", "value": "web" },
+      { "type": "file", "value": "真理未决-备案截图.zip" },
+      { "type": "file", "value": "minigame-0.9.1-github.zip" },
+      { "type": "file", "value": "minigame-0.9.2-github.zip" },
+      { "type": "file", "value": "GITHUB_SYNC.md" },
+      { "type": "file", "value": "FILING.md" },
+      { "type": "file", "value": "RELEASE.md" },
+      { "type": "file", "value": "README.md" },
+      { "type": "file", "value": ".eslintrc.js" }
+    ]
+  },
+  "simulatorPluginLibVersion": {}
+}
