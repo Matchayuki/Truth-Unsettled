@@ -51,8 +51,9 @@ const philosophers = [
     skills:[["公共领域","每局一次：结果结算前发起重新投票；所有存活玩家必须重新投票。"],["共同行动","每议题一次：若至少两名其他玩家与你投同一立场，该立场 +1 票影响。"]] }
 ];
 
-const threeMindCharacters = new Set(["socrates","plato","aristotle","confucius","laozi","mozi","mencius","hanfei","epicurus","avicenna","spinoza","arendt"]);
-philosophers.forEach(character => { character.mind = threeMindCharacters.has(character.id) ? 3 : 4; });
+// 0.9.2 起：所有角色心智上限整体下调 1 点，强角色 2 点、常规角色 3 点。
+const twoMindCharacters = new Set(["socrates","plato","aristotle","confucius","laozi","mozi","mencius","hanfei","epicurus","avicenna","spinoza","arendt"]);
+philosophers.forEach(character => { character.mind = twoMindCharacters.has(character.id) ? 2 : 3; });
 
 const basics = [
   {id:"argument",name:"论证",count:12,tag:"基础牌 · 立场",icon:"⌁",effect:"出牌时选择赞成或反对，为该立场增加 1 票影响。每人每议题最多保留 2 枚论证标记；被「反例」或指定效果移除。",balance:"高频核心牌；提供公开施压，也会暴露倾向。"},
